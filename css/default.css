@@ -1,7 +1,7 @@
 :root {
 	--white: #fff;
 	--black: #000;
-	--bg-color: #2476fe;
+	--blue: #2476fe;
 	--font-color-light: #6f7e8e;
 	--sketch-color: #01c8a7;
 
@@ -32,6 +32,14 @@ html {
 body {
 	letter-spacing: 0;
 	line-height: 1.6;
+	color: var(--font-color-light);
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	vertical-align: middle;
+	border-style: none;
 }
 
 ul {
@@ -42,5 +50,4 @@ a {
 	text-decoration: none;
 }
 
-/* comment */
 

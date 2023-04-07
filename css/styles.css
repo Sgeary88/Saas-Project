@@ -1,0 +1,23 @@
+.nav-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: var(--size-30);
+}
+
+.navbar-toggler {
+	display: none;
+}
+
+.navbar-brand {
+	max-width: var(--size-150);
+}
+
+.navbar-nav {
+	display: flex;
+	align-items: center;
+}
+
+.nav-link a {
+	padding-right: var(--size-20);
+}
