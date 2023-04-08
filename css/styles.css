@@ -1,3 +1,5 @@
+/* Nav and  Header */
+
 .nav-container {
 	display: flex;
 	align-items: center;
@@ -16,8 +18,76 @@
 .navbar-nav {
 	display: flex;
 	align-items: center;
+	font-size: var(--size-14);
+	font-weight: 500;
 }
 
 .nav-link a {
 	padding-right: var(--size-20);
+	color: var(--font-color-light);
 }
+
+.nav-link:nth-child(2) a {
+	color: var(--blue);
+	font-weight: 600;
+}
+
+.nav-link .btn {
+	color: var(--white);
+	padding: var(--size-14) var(--size-20);
+}
+
+.bg-header {
+	background-image: url(/saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.header-container {
+	display: flex;
+}
+
+.header-left {
+	padding-left: var(--size-30);
+}
+
+.header-left h2 {
+	font-size: var(--size-30);
+	padding-bottom: var(--size-10);
+}
+
+.header-left p {
+	padding-bottom: var(--size-40);
+	font-size: var(--size-14);
+}
+
+.header-left .btn {
+	padding: var(--size-14) var(--size-20);
+}
+
+.header-left span {
+	padding-right: 0.5rem;
+}
+
+.header-left a:nth-of-type(2)  {
+	padding-left: var(--size-20);
+	color: var(--blue);
+	font-weight: 600;
+}
+
+.header-left,
+.header-right {
+	flex: 1;
+}
+
+.header-right .company-logo {
+	max-width: 90px;
+	max-height: 90px;
+	background-color: var(--white);
+	border-radius: 50%;
+	position: relative;
+	border: 1px solid transparent;
+	box-shadow: 0 0 20px #b2b7bc;
+}
+
