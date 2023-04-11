@@ -19,8 +19,9 @@
 	display: flex;
 	align-items: center;
 	font-size: var(--size-14);
-	font-weight: 500;
+	font-weight: 600;
 }
+
 
 .nav-link a {
 	padding-right: var(--size-20);
@@ -35,6 +36,8 @@
 .nav-link .btn {
 	color: var(--white);
 	padding: var(--size-14) var(--size-20);
+	margin-right: var(--size-18);
+	font-weight: 500;
 }
 
 .bg-header {
@@ -46,6 +49,7 @@
 
 .header-container {
 	display: flex;
+	margin-top: var(--size-100);
 }
 
 .header-left {
@@ -53,7 +57,7 @@
 }
 
 .header-left h2 {
-	font-size: var(--size-30);
+	font-size: var(--size-40);
 	padding-bottom: var(--size-10);
 }
 
@@ -81,9 +85,16 @@
 	flex: 1;
 }
 
+.header-right {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	row-gap: 3.125rem;
+  margin-top: -0.938rem;
+}
+
 .header-right .company-logo {
-	max-width: 90px;
-	max-height: 90px;
+	max-width: 5.625rem;
+	max-height: 5.625rem;
 	background-color: var(--white);
 	border-radius: 50%;
 	position: relative;
@@ -91,3 +102,55 @@
 	box-shadow: 0 0 20px #b2b7bc;
 }
 
+.header-right .company-small {
+	max-width: 60px;
+	max-height: 60px;
+}
+
+.header-right .asana-logo {
+	grid-column: 4 /5;
+}
+
+.header-right .atlassian-logo {
+	grid-column: 2 / 4;
+	grid-row: 1 / 2;
+}
+
+.header-right .calender-logo {
+	grid-column: 4 /5;
+	grid-row: 3 /4;
+}
+
+.header-right .google-logo {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	margin-left: 1.25rem;
+}
+
+.header-right .googleA-logo {
+	grid-column: 2 / 3;
+	grid-row: 3 /4;
+}
+
+.header-right .paypal-logo {
+	grid-column: 1 /2;
+	grid-row: 2 / 3;
+}
+
+.header-right .weave-logo {
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+}
+
+.asana-logo,
+.atlassian-logo,
+.calender-logo,
+.paypal-logo,
+.weave-logo {
+	padding: var(--size-16);
+}
+
+.google-logo,
+.googleA-logo {
+	padding: var(--size-10);
+}
