@@ -1,5 +1,6 @@
 /* Nav and  Header */
 
+
 .nav-container {
 	display: flex;
 	align-items: center;
@@ -52,13 +53,10 @@
 	margin-top: var(--size-100);
 }
 
-.header-left {
-	padding-left: var(--size-30);
-}
-
-.header-left h2 {
+.header-left h1 {
 	font-size: var(--size-40);
 	padding-bottom: var(--size-10);
+	line-height: 1.3;
 }
 
 .header-left p {
@@ -74,7 +72,7 @@
 	padding-right: 0.5rem;
 }
 
-.header-left a:nth-of-type(2)  {
+.header-left a:nth-of-type(2) {
 	padding-left: var(--size-20);
 	color: var(--blue);
 	font-weight: 600;
@@ -89,7 +87,7 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	row-gap: 3.125rem;
-  margin-top: -0.938rem;
+	margin-top: -0.938rem;
 }
 
 .header-right .company-logo {
@@ -153,4 +151,270 @@
 .google-logo,
 .googleA-logo {
 	padding: var(--size-10);
+}
+
+/* Benefits Styles */
+
+.benefits-header {
+	text-align: center;
+}
+
+.benefits-header h2 {
+	font-size: var(--size-30);
+	margin-top: var(--size-100);
+}
+
+.benefits-header p {
+	margin-top: var(--size-10);
+	font-size: var(--size-18);
+}
+
+.benefits img {
+	max-width: var(--size-50);
+	margin-bottom: var(--size-16);
+}
+
+.card-container {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 4.688rem;
+}
+
+.card-container h4 {
+	font-size: var(--size-18);
+	font-weight: 700;
+}
+
+.card-container h4,
+.card-container p {
+	margin-bottom: var(--size-18);
+}
+
+.card-container a {
+	color: var(--blue);
+	font-weight: 600;
+}
+
+.benefit-card1,
+.benefit-card2,
+.benefit-card3,
+.benefit-card4 {
+	border: 1px solid transparent;
+	box-shadow: 0 0 20px 8px #f1f1f1;
+	padding: var(--size-20);
+	max-width: 15.625rem;
+}
+
+/* Banner One Styles */
+
+.banner-one-container {
+	display: flex;
+	margin-top: var(--size-100);
+	background-color: #f9fafe;
+	padding-top: var(--size-100);
+}
+
+.banner-one-left,
+.banner-one-right {
+	flex: 1;
+}
+
+.banner-one-left {
+	margin: auto var(--size-40);
+}
+
+.banner-one-left h3 {
+	font-size: 1.563rem;
+	line-height: 1.3;
+	margin-bottom: var(--size-30);
+}
+
+.banner-one-left a {
+	padding: 0.75rem var(--size-20);
+}
+
+/* Why Front Styles */
+
+.why-front-container {
+	margin-top: var(--size-100);
+	text-align: center;
+}
+
+.why-header h2 {
+	font-size: var(--size-30);
+}
+
+.why-header p {
+	margin-top: var(--size-10);
+	font-size: var(--size-18);
+}
+
+.dot-path-container {
+	margin-top: var(--size-50);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.circle-container {
+	display: flex;
+	align-items: center;
+}
+
+.circle {
+	display: flex;
+	align-items: center;
+}
+
+
+.outer-circle {
+	background-color: #ecf2ff;
+	min-width: 3.75rem;
+	height: 3.75rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inner-circle {
+	background-color: var(--blue);
+	width: var(--size-10);
+	height: var(--size-10);
+	border-radius: 50%;
+}
+
+hr {
+	width: 12.5rem;
+	margin: 0 0.313rem;
+}
+
+.under-circle {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	padding: 0 6.875rem;
+	margin-top: var(--size-20);
+}
+
+.under-circle h3:nth-child(2) {
+	padding-left: var(--size-30);
+}
+
+
+
+/* Banner Two Styles */
+
+.banner-two-container {
+	margin-top: var(--size-150);
+}
+
+.video-box {
+	position: relative;
+}
+
+.play-circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 4.688rem;
+	height: 4.688rem;
+	background-color: var(--white);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid transparent;
+	box-shadow: 0 0 20px #b2b7bc;
+}
+
+.play-btn {
+	font-size: var(--size-20);
+}
+
+.play-btn a {
+	padding: var(--size-30);
+}
+
+/* HubSpot Styles */
+
+.hubspot-container {
+	display: flex;
+	margin-top: var(--size-100);
+}
+
+.left-hub,
+.right-hub {
+	flex: 1;
+}
+
+.left-hub {
+	position: relative;
+}
+
+.left-hub img {
+	position: absolute;
+	width: 400px;
+}
+
+.left-hub img.dots {
+	height: 400px;
+	left: 0;
+	bottom: 0;
+}
+
+.left-hub img.woman {
+	top: 15px;
+	right: 25px;
+}
+
+.hub-block-text {
+	padding: 100px 0;
+	margin-left: var(--size-40);
+}
+
+.hub-block-text h3 {
+	width: var(--size-100);
+	margin-bottom: var(--size-30);
+}
+
+.hub-block-text p {
+	font-size: var(--size-20);
+	font-weight: 500;
+	color: var(--black);
+	margin-bottom: var(--size-40);
+}
+
+.block-bottom h4 {
+	font-size: var(--size-18);
+	font-weight: 800;
+}
+
+.block-bottom p {
+	font-size: var(--size-14);
+	color: var(--font-color-light);
+	font-weight: 500;
+}
+
+/* Trusted Styles */
+
+.trusted-container {
+	margin-top: var(--size-100);
+}
+
+.trusted-container h3 {
+	text-align: center;
+	color: var(--font-color-light);
+	font-weight: 700;
+}
+
+.trusted-company {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: var(--size-40);
+}
+
+.trusted-company img {
+	width: 150px;
 }
