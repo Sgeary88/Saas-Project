@@ -233,6 +233,10 @@
 	padding: 0.75rem var(--size-20);
 }
 
+.banner-one-left span {
+	padding-right: 5px;
+}
+
 /* Why Front Styles */
 
 .why-front-container {
@@ -365,8 +369,8 @@ hr {
 }
 
 .left-hub img.woman {
-	top: 15px;
-	right: 25px;
+	top: 0.938rem;
+	right: var(--size-50);
 }
 
 .hub-block-text {
@@ -411,10 +415,161 @@ hr {
 
 .trusted-company {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	margin-top: var(--size-40);
 }
 
 .trusted-company img {
 	width: 150px;
 }
+
+/* Pricing Styles */
+
+.pricing-header {
+	margin-top: var(--size-100);
+	text-align: center;
+}
+
+.pricing-header h2 {
+	font-size: var(--size-30);
+}
+
+.pricing-header p {
+	font-size: var(--size-18);
+	font-weight: 500;
+}
+
+.pricing-container {
+	width: 100%;
+	display: flex;
+	margin-top: var(--size-50);
+}
+
+.pricing-left {
+	flex: 1;
+}
+
+.pricing-right {
+	flex: 2;
+}
+
+.pricing-block {
+	border: 1px solid transparent;
+	box-shadow: 0 0 20px #b2b7bc;
+	padding: var(--size-50) var(--size-30);
+	height: 32.313rem;
+}
+
+.pricing-block h3 {
+	font-size: var(--size-50);
+	margin: var(--size-30) 0 var(--size-20);
+}
+
+.pricing-block span {
+	font-size: var(--size-20);
+	color: var(--font-color-light);
+}
+
+.pricing-block hr {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.pricing-block p:first-of-type {
+	margin: var(--size-30) 0;
+}
+
+.pricing-video-btn {
+	margin: var(--size-50) 0 var(--size-16);
+}
+
+.pricing-video-btn a {
+	padding: 0.75rem var(--size-20);
+}
+
+.pricing-video-btn span {
+	padding-right: 5px;
+	color: var(--white);
+}
+
+.pricing-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid-item {
+	margin: var(--size-30);
+}
+
+.pricing-logos {
+	width: 50px;
+}
+
+.grid-item h3 {
+	margin: var(--size-20) 0;
+	font-size: var(--size-20);
+	font-weight: 800;
+}
+
+.grid-item p {
+	font-size: var(--size-14);
+}
+
+/* Hire Us */
+
+section.hire-us {
+	background-color: #20335b;
+}
+
+.hire-us-container {
+	display: flex;
+	padding: var(--size-20) 0;
+}
+
+.hire-left h2 {
+	color: var(--white);
+	margin-bottom: var(--size-10);
+}
+
+.hire-left p:first-of-type,
+.hire-left hr {
+	margin-bottom: var(--size-30);
+}
+
+.hire-left p q {
+	margin-top: var(--size-30);
+	color: var(--white);
+	font-style: italic;
+	letter-spacing: 1px;
+}
+
+.hire-left h3 {
+	margin-top: var(--size-50);
+	color: var(--white);
+}
+
+.bottom-people {
+	display: inline-block;
+	margin-top: var(--size-50);
+}
+
+.bottom-people img {
+	width: 50px;
+	margin-right: var(--size-30);
+	border-radius: 50%;
+}
+
+.bottom-people .people-lrg {
+	width: 65px;
+}
+
+.hire-right form {
+	background-color: var(--white);
+	border-radius: 10px;
+	padding: var(--size-30);
+}
+
+.form h2 {
+	font-size: var(--size-18);
+}
+
