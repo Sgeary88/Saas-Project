@@ -639,7 +639,7 @@ input[type="checkbox"] {
 	margin-left: 2.938rem;
 	margin-right: 1.563rem;
 	color: var(--font-color-light);
-	
+
 }
 
 .privacy-policy a:last-of-type {
@@ -720,4 +720,58 @@ input[type="checkbox"] {
 	margin: var(--size-50) 0;
 	border: 1px solid #6f7e8e2b;
 	width: 100%;
+}
+
+.flex-stuff {
+	display: flex;
+	justify-content: space-between;
+}
+
+.stuff-left {
+	display: flex;
+}
+
+.stuff-left i {
+	font-weight: 100;
+	font-size: 12px;
+	margin: 0 5px;
+}
+
+.stuff-left span {
+	color: var(--blue);
+	font-weight: 500;
+}
+
+.stuff-right i.fa-brands {
+	border-radius: 10px;
+	padding-right: 10px;
+	background-color: #ecf2fe;
+	color: var(--font-color-light);
+	width: 35px;
+	height: 35px;
+	text-align: center;
+	padding-top: 10px;
+	padding-left: 10px;
+	margin-right: 15px;
+}
+
+select#footer-country {
+	padding: 7px 20px;
+	font-size: var(--size-16);
+	font-weight: 100;
+	background-color: #ecf2fe;
+	border: 1px solid transparent;
+}
+
+.copyright {
+	text-align: center;
+	margin-top: var(--size-20);
+}
+
+.copyright p:first-of-type {
+	margin-bottom: var(--size-20);
+}
+
+.copyright p span {
+	margin-right: 5px;
 }
