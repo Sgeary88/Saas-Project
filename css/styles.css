@@ -525,6 +525,7 @@ section.hire-us {
 	display: flex;
 	padding: var(--size-30) 0;
 	justify-content: space-around;
+	margin-top: var(--size-100);
 }
 
 .hire-left {
@@ -653,4 +654,70 @@ input[type="checkbox"] {
 
 .get-started-btn a {
 	padding: 15px 25px;
+}
+
+/* Footer Styles */
+
+.footer-top {
+	margin-top: var(--size-100);
+}
+
+.top-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+.location-phone img {
+	width: 100px;
+	padding-bottom: var(--size-14);
+}
+
+.location-phone p:first-of-type {
+	padding-bottom: 0.313rem;
+}
+
+.location-phone p:last-of-type {
+	color: var(--blue);
+}
+
+.location-phone p i {
+	padding-right: var(--size-10);
+	color: var(--font-color-light);
+}
+
+.top-container *h3 {
+	font-weight: 800;
+	margin-bottom: 5px;
+}
+
+.company li,
+.features li,
+.documentation li,
+.resources li {
+	color: var(--font-color-light);
+	padding-top: 5px;
+}
+
+.company-list span {
+	background-color: var(--blue);
+	color: var(--white);
+	font-size: var(--size-10);
+	padding: 2px 5px;
+	border-radius: 5px;
+	margin-left: 5px;
+}
+
+.features li:nth-child(2) {
+	color: var(--blue);
+	font-weight: 600;
+}
+
+.resources li i {
+	padding-right: var(--size-10);
+}
+
+.footer-top hr {
+	margin: var(--size-50) 0;
+	border: 1px solid #6f7e8e2b;
+	width: 100%;
 }
