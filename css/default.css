@@ -30,11 +30,9 @@ html {
 }
 
 body {
-	max-width: 1200px;
 	letter-spacing: 0;
 	line-height: 1.6;
 	font-family: "Lato", sans-serif;
-	margin: 0 auto 200px;
 }
 
 img {
@@ -74,4 +72,17 @@ p {
 	font-size: var(--size-16);
 	background-color: #01c8a7;
 	color: var(--white);
+}
+
+@media (min-width: 1200px) {
+
+	.container,
+	.bg-container {
+		max-width: 1140px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }

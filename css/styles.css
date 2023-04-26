@@ -1,5 +1,22 @@
 /* Nav and  Header */
 
+.bg-container {
+	position: relative;
+	overflow: hidden;
+	max-width: 1140px;
+}
+
+.bg-container::before {
+	content: "";
+	position: absolute;
+	width: 107%;
+	height: 100%;
+	background-image: linear-gradient(127deg, #fff 50%, #efefef 68%, #e0e7ef 68%);
+	transform: rotate(-10deg);
+	z-index: -1;
+	bottom: 52px;
+	left: 40px;
+}
 
 .nav-container {
 	display: flex;
@@ -42,10 +59,8 @@
 }
 
 .bg-header {
-	background-image: url(/saas-project-assets/abstract/hire-us-transparent-pattern-bg.svg);
-	background-repeat: no-repeat;
-	background-size: cover;
 	position: relative;
+	margin-bottom: var(--size-10);
 }
 
 .header-container {
@@ -79,11 +94,11 @@
 }
 
 .header-left,
-.header-right {
+.header-right .grid-container {
 	flex: 1;
 }
 
-.header-right {
+.header-right .grid-container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	row-gap: 3.125rem;
@@ -174,31 +189,28 @@
 	margin-bottom: var(--size-16);
 }
 
-.card-container {
+.cards {
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 4.688rem;
 }
 
-.card-container h4 {
+.cards h4 {
 	font-size: var(--size-18);
 	font-weight: 700;
 }
 
-.card-container h4,
-.card-container p {
+.cards h4,
+.cards p {
 	margin-bottom: var(--size-18);
 }
 
-.card-container a {
+.cards a {
 	color: var(--blue);
 	font-weight: 600;
 }
 
-.benefit-card1,
-.benefit-card2,
-.benefit-card3,
-.benefit-card4 {
+.benefit-card {
 	border: 1px solid transparent;
 	box-shadow: 0 0 20px 8px #f1f1f1;
 	padding: var(--size-20);
@@ -207,7 +219,7 @@
 
 /* Banner One Styles */
 
-.banner-one-container {
+.banner-one {
 	display: flex;
 	margin-top: var(--size-100);
 	background-color: #f9fafe;
@@ -239,7 +251,7 @@
 
 /* Why Front Styles */
 
-.why-front-container {
+.why-front {
 	margin-top: var(--size-100);
 	text-align: center;
 }
@@ -253,7 +265,7 @@
 	font-size: var(--size-18);
 }
 
-.dot-path-container {
+.dot-path {
 	margin-top: var(--size-50);
 	display: flex;
 	flex-direction: column;
@@ -310,12 +322,13 @@ hr {
 
 /* Banner Two Styles */
 
-.banner-two-container {
-	margin-top: var(--size-150);
+.banner-two {
+	margin-top: var(--size-100);
 }
 
 .video-box {
 	position: relative;
+	margin: 0 var(--size-40);
 }
 
 .play-circle {
@@ -343,7 +356,7 @@ hr {
 
 /* HubSpot Styles */
 
-.hubspot-container {
+.hubspot {
 	display: flex;
 	margin-top: var(--size-100);
 }
@@ -364,13 +377,17 @@ hr {
 
 .left-hub img.dots {
 	height: 400px;
-	left: 0;
 	bottom: 0;
+	object-fit: contain;
+	object-position: 45px 0px;
+	overflow: visible;
 }
 
 .left-hub img.woman {
 	top: 0.938rem;
-	right: var(--size-50);
+	object-fit: contain;
+	object-position: 106px 0px;
+	overflow: visible;
 }
 
 .hub-block-text {
@@ -403,11 +420,11 @@ hr {
 
 /* Trusted Styles */
 
-.trusted-container {
+.trusted {
 	margin-top: var(--size-100);
 }
 
-.trusted-container h3 {
+.trusted h3 {
 	text-align: center;
 	color: var(--font-color-light);
 	font-weight: 700;
@@ -415,7 +432,7 @@ hr {
 
 .trusted-company {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-top: var(--size-40);
 }
 
@@ -439,10 +456,18 @@ hr {
 	font-weight: 500;
 }
 
-.pricing-container {
+.pricing {
+	display: flex;
+}
+
+.pricing-block {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	margin-top: var(--size-50);
+	border: 1px solid transparent;
+	box-shadow: 0 0 20px #b2b7bc;
+	padding: var(--size-50) var(--size-30);
 }
 
 .pricing-left {
@@ -457,7 +482,6 @@ hr {
 	border: 1px solid transparent;
 	box-shadow: 0 0 20px #b2b7bc;
 	padding: var(--size-50) var(--size-30);
-	height: 32.313rem;
 }
 
 .pricing-block h3 {
@@ -495,6 +519,9 @@ hr {
 .pricing-grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	margin-top: var(--size-50);
+	margin-left: var(--size-30);
+	place-items: center;
 }
 
 .grid-item {
@@ -517,15 +544,18 @@ hr {
 
 /* Hire Us */
 
-section.hire-us {
-	background-color: #20335b;
-}
 
-.hire-us-container {
+.hire-us {
 	display: flex;
 	padding: var(--size-30) 0;
 	justify-content: space-around;
 	margin-top: var(--size-100);
+	background-color: #20335b;
+}
+
+.hire-left,
+.hire-right {
+	flex: 1;
 }
 
 .hire-left {
@@ -556,9 +586,12 @@ section.hire-us {
 	color: var(--white);
 }
 
+.hire-container {
+	margin-left: var(--size-100);
+}
+
 .bottom-people {
 	display: inline-block;
-	margin-top: var(--size-50);
 }
 
 .bottom-people img {
@@ -571,10 +604,12 @@ section.hire-us {
 	width: 65px;
 }
 
+
 .hire-right form {
 	background-color: var(--white);
 	border-radius: 10px;
 	padding: var(--size-30);
+	margin-right: var(--size-30);
 }
 
 form h2 {
@@ -638,8 +673,7 @@ input[type="checkbox"] {
 .privacy-policy a:first-of-type {
 	margin-left: 2.938rem;
 	margin-right: 1.563rem;
-	color: var(--font-color-light);
-
+	border-bottom: 1px dashed var(--font-color-light);
 }
 
 .privacy-policy a:last-of-type {
@@ -662,9 +696,17 @@ input[type="checkbox"] {
 	margin-top: var(--size-100);
 }
 
-.top-container {
+.top {
 	display: flex;
-	justify-content: space-around;
+}
+
+.top,
+.info-list {
+	flex: 1;
+}
+
+.info-list {
+	justify-content: space-evenly;
 }
 
 .location-phone img {
@@ -685,7 +727,7 @@ input[type="checkbox"] {
 	color: var(--font-color-light);
 }
 
-.top-container *h3 {
+.top *h3 {
 	font-weight: 800;
 	margin-bottom: 5px;
 }
