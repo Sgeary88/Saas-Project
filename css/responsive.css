@@ -1,6 +1,39 @@
 @media screen and (max-width: 767px) {
 
-	.benefit-card {
+	.header-container .header-right .grid-container {
+		max-width: 360px;
+		row-gap: 20px;
+		position: relative;
+	}
+
+	.header-right .company-logo {
+		max-width: 4.688rem;
+		max-height: 4.688rem;
+	}
+
+	.header-right .company-small {
+		max-width: 3.75rem;
+		max-height: 3.75rem;
+	}
+
+	.header-right .atlassian-logo {
+		position: absolute;
+		left: 25px;
+		top: 5px;
+	}
+
+	.header-right .asana-logo {
+		position: absolute;
+		left: -20px;
+		top: 20px;
+	}
+
+
+	.benefits .cards {
+		display: block;
+	}
+
+	.cards .benefit-card {
 		margin-bottom: 30px;
 		max-width: 360px;
 	}
@@ -43,6 +76,59 @@
 		padding: 0;
 	}
 
+	.banner-section .banner-two {
+		margin-top: var(--size-20);
+	}
+
+	.banner-two .video-box {
+		margin: 0;
+	}
+
+	.video-box .play-circle {
+		transform: translate(-40px, -40px);
+	}
+
+	section .hubspot {
+		margin-top: var(--size-50);
+	}
+
+	.hubspot .left-hub {
+		height: 15.875rem;
+	}
+
+	.hubspot .left-hub img {
+		width: 250px;
+	}
+
+	.hubspot .left-hub img.dots {
+		object-position: -23px 76px;
+		height: 240px;
+	}
+
+	.hubspot .left-hub img.woman {
+		object-position: 12px 0px;
+	}
+
+	.hub-block-text {
+		margin-left: 0;
+	}
+
+	.hub-block-text h3 {
+		width: var(--size-150);
+	}
+
+	.hub-block-text>p {
+		font-size: 1.563rem;
+	}
+
+	.block-bottom h4 {
+		font-size: 25px;
+	}
+
+	.block-bottom p {
+		font-size: var(--size-20);
+	}
+
 	.trusted-company {
 		flex-direction: column;
 		align-items: center;
@@ -65,8 +151,75 @@
 		margin: 2.813rem auto;
 	}
 
+	.hire-left .hire-container {
+		display: block;
+		margin-left: 0;
+		text-align: center;
+	}
+
+	.hire-container .hire-block hr {
+		width: 90%;
+		margin: 0 auto var(--size-30);
+	}
+
+	.hire-container .hire-bottom {
+		margin-left: 0;
+	}
+
+	.top,
+	.info-list {
+		display: block;
+	}
+
+	.top {
+		text-align: center;
+	}
+
+	.company,
+	.features,
+	.documentation,
+	.resources {
+		margin-top: var(--size-30);
+	}
+
+	.top .info-list {
+		display: block;
+	}
+
+	.top .info-list {
+		margin-left: 0;
+	}
+
+	.info-list h3 {
+		font-size: 1.563rem;
+		font-weight: 900;
+	}
+
+	.info-list ul li {
+		font-size: var(--size-20);
+		font-weight: 600;
+		margin-top: var(--size-10);
+	}
+
+	.bottom .flex-stuff {
+		display: block;
+		text-align: center;
+	}
+
+	.flex-stuff .stuff-left {
+		display: block;
+		margin-bottom: var(--size-30);
+	}
+
+	select#footer-country {
+		display: block;
+		margin: var(--size-30) auto;
+		font-size: var(--size-18);
+	}
+
 }
 
+/* Tablet */
 
 @media screen and (max-width: 1023px) {
 	[aria-controls="navbarDropdown"] {
@@ -78,19 +231,27 @@
 	}
 
 	[aria-expanded="true"]~ul {
-		display: block;
+		display: flex;
+		align-items: baseline;
 		position: absolute;
 		right: 0;
-		top: var(--size-50);
-		background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+		top: var(--size-100);
+		background-color: var(--white);
 		width: 100%;
-		text-align: right;
-		box-shadow: 0 0 20px rgba(52, 49, 75, 0.1);
+		height: 100%;
+		z-index: 10;
+		border-top: 1px solid lightgray;
+		padding-top: var(--size-100);
+		justify-content: center;
 	}
 
-	[aria-expanded="true"]~ul li a {
-		margin-right: var(--size-20);
-		color: var(--font-color-dark);
+	[aria-expanded="true"]~ul li {
+		color: var(--font-color-light);
+		font-size: var(--size-20);
+	}
+
+	[aria-expanded="true"]~ul li:last-of-type {
+		
 	}
 
 
@@ -99,11 +260,19 @@
 	}
 
 	.navbar-toggler {
-		font-size: 20px;
+		outline: none;
 		background-color: transparent;
 		border: 1px solid transparent;
-		color: #4f5965;
+		
 	}
+
+	.navbar-toggler span {
+		font-size: 1.563rem;
+		color: #4f5965;
+		cursor: pointer;
+		pointer-events: none;
+	}
+
 
 	.header-container {
 		display: block;
