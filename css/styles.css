@@ -217,6 +217,11 @@
 	max-width: 15.625rem;
 }
 
+.benefit-card:hover {
+	transform: scale(1.1);
+	box-shadow: 0 0 20px 8px #01c8a7;
+}
+
 /* Banner One Styles */
 
 .banner-one {
