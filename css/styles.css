@@ -3,7 +3,7 @@
 .bg-container {
 	position: relative;
 	overflow: hidden;
-	max-width: 1140px;
+	max-width: 100%;
 }
 
 .bg-container::before {
@@ -30,14 +30,14 @@
 }
 
 .navbar-brand {
-	max-width: var(--size-150);
+	max-width: 200px;
 }
 
 .navbar-nav {
 	display: flex;
 	align-items: center;
-	font-size: var(--size-14);
 	font-weight: 600;
+	font-size: 1.2rem;
 }
 
 
@@ -46,16 +46,28 @@
 	color: var(--font-color-light);
 }
 
-.nav-link:nth-child(2) a {
-	color: var(--blue);
-	font-weight: 600;
+.nav-link .btn,
+.header-left .btn {
+	padding: var(--size-14) var(--size-20)
 }
+
 
 .nav-link .btn {
 	color: var(--white);
-	padding: var(--size-14) var(--size-20);
 	margin-right: var(--size-18);
 	font-weight: 500;
+}
+
+.sticky {
+	background-color: var(--white);
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 20px 10%;
+	z-index: 200;
+	box-shadow: 0 0 20px rgb(52 49 75 / 10%);
+	transition: all 1s ease-in-out;
 }
 
 .bg-header {
@@ -82,10 +94,6 @@
 .header-left p {
 	padding-bottom: var(--size-40);
 	font-size: var(--size-14);
-}
-
-.header-left .btn {
-	padding: var(--size-14) var(--size-20);
 }
 
 .header-left span {
@@ -125,9 +133,19 @@
 	grid-column: 4 /5;
 }
 
+.asana-logo i {
+	color: #dd4b24;
+	font-size: 4.375rem;
+}
+
 .header-right .atlassian-logo {
 	grid-column: 2 / 4;
 	grid-row: 1 / 2;
+}
+
+.atlassian-logo i {
+	color: var(--blue);
+	font-size: 4.375rem;
 }
 
 .header-right .calender-logo {
@@ -135,9 +153,19 @@
 	grid-row: 3 /4;
 }
 
+.calender-logo i {
+	color: #01c8a7;
+	font-size: 3.75rem;
+}
+
 .header-right .google-logo {
 	grid-column: 1 / 2;
 	grid-row: 1 / 2;
+}
+
+.google-logo i {
+	font-size: 2.5rem;
+	color: #34a853;
 }
 
 .header-right .googleA-logo {
@@ -145,14 +173,29 @@
 	grid-row: 3 /4;
 }
 
+.googleA-logo i {
+	color: #D46712;
+	font-size: 2.313rem;
+}
+
 .header-right .paypal-logo {
 	grid-column: 1 /2;
 	grid-row: 2 / 3;
 }
 
+.paypal-logo i {
+	color: #f7c327;
+	font-size: 4.063rem;
+}
+
 .header-right .weave-logo {
 	grid-column: 3 / 4;
 	grid-row: 2 / 3;
+}
+
+.weave-logo i {
+	color: #09cdf7;
+	font-size: 3.125rem;
 }
 
 .asana-logo,
@@ -166,6 +209,12 @@
 .google-logo,
 .googleA-logo {
 	padding: var(--size-10);
+}
+
+.company-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Benefits Styles */
@@ -270,33 +319,26 @@
 	font-size: var(--size-18);
 }
 
+.circle,
+.circle-container,
+.dot-path,
+.outer-circle {
+	display: flex;
+	align-items: center
+}
+
 .dot-path {
 	margin-top: var(--size-50);
-	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 }
-
-.circle-container {
-	display: flex;
-	align-items: center;
-}
-
-.circle {
-	display: flex;
-	align-items: center;
-}
-
 
 .outer-circle {
 	background-color: #ecf2ff;
 	min-width: 3.75rem;
 	height: 3.75rem;
 	border-radius: 50%;
-	display: flex;
 	justify-content: center;
-	align-items: center;
 }
 
 .inner-circle {
@@ -381,10 +423,10 @@ hr {
 }
 
 .left-hub img.dots {
-	height: 400px;
+	height: 430px;
 	bottom: 0;
 	object-fit: contain;
-	object-position: 45px 0px;
+	object-position: 45px -75px;
 	overflow: visible;
 }
 
@@ -401,7 +443,7 @@ hr {
 }
 
 .hub-block-text h3 {
-	width: var(--size-100);
+	width: 200px;
 	margin-bottom: var(--size-30);
 }
 
@@ -556,6 +598,7 @@ hr {
 	justify-content: space-around;
 	margin-top: var(--size-100);
 	background-color: #20335b;
+	max-width: 100%;
 }
 
 .hire-left,
@@ -592,7 +635,7 @@ hr {
 }
 
 .hire-container {
-	margin-left: var(--size-100);
+	margin: 0 auto;
 }
 
 .bottom-people {

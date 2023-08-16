@@ -26,14 +26,14 @@
 <body>
 
 	<!-- Navigation / Header -->
-	<div class="bg-container"  id="home">
-		<nav class="navbar">
+	<div class="bg-container" id="home">
+		<nav class="navbar" id="navBar">
 			<div class="nav-container">
 				<button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
 					<span>&#9776;</span>
 				</button>
 				<a href="#" class="navbar-brand">
-					<img class="header-logo" src="/saas-project-assets/project_logo/logo.svg" alt="logo">
+					<img class="header-logo" src="/saas-project-assets/company_logos/stock-logo-4.png" alt="logo">
 				</a>
 				<ul class="navbar-nav">
 					<li class="nav-link">
@@ -73,25 +73,25 @@
 				<div class="header-right">
 					<div class="grid-container">
 						<div class="asana-logo company-logo">
-							<img src="/saas-project-assets/logo_icons/asana.png" alt="Asana">
+							<i class="fa-brands fa-html5"></i>
 						</div>
 						<div class="atlassian-logo company-logo">
-							<img src="/saas-project-assets/logo_icons/atlassian.png" alt="Atlassian">
+							<i class="fa-brands fa-css3-alt"></i>
 						</div>
 						<div class="calender-logo company-logo">
-							<img src="/saas-project-assets/logo_icons/calendar.png" alt="Calender">
+							<i class="fa-solid fa-shield-halved"></i>
 						</div>
 						<div class="google-logo company-logo company-small">
-							<img src="/saas-project-assets/logo_icons/google.png" alt="Google">
+							<i class="fa-brands fa-google"></i>
 						</div>
 						<div class="googleA-logo company-logo company-small">
-							<img src="/saas-project-assets/logo_icons/google-A.png" alt="Google A">
+							<i class="fa-solid fa-meteor"></i>
 						</div>
 						<div class="paypal-logo company-logo">
-							<img src="/saas-project-assets/logo_icons/paypal.jpg" alt="Paypal">
+							<i class="fa-brands fa-square-js"></i>
 						</div>
 						<div class="weave-logo company-logo">
-							<img src="/saas-project-assets/logo_icons/weave.png" alt="Weave">
+							<i class="fa-solid fa-code"></i>
 						</div>
 					</div>
 				</div>
@@ -251,18 +251,18 @@
 		<div class="hubspot container">
 			<div class="left-hub">
 				<img class="dots" src="/saas-project-assets/abstract/dots.svg" alt="dots">
-				<img class="woman" src="/saas-project-assets/people/woman_three.jpg" alt="woman">
+				<img class="woman" src="/saas-project-assets/people/woman-resized.jpg" alt="woman">
 			</div>
 
 			<div class="right-hub">
 				<div class="hub-block-text">
 					<h3>
-						<img src="/saas-project-assets/company_logos/hubspot.svg" alt="hubspot logo">
+						<img src="/saas-project-assets/company_logos/stock-logo-3.png" alt="hubspot logo">
 					</h3>
 					<p>
-						The template is really nice and offers quite a 
-						large set of options. It's beautiful and the 
-						coding is done quickly and seamlessly. Thank 
+						The template is really nice and offers quite a
+						large set of options. It's beautiful and the
+						coding is done quickly and seamlessly. Thank
 						you!
 					</p>
 					<div class="block-bottom">
@@ -282,11 +282,11 @@
 		<div class="trusted container">
 			<h3>TRUSTED BY THE WORLD'S BEST</h3>
 			<div class="trusted-company">
-				<img src="/saas-project-assets/company_logos/weebly.svg" alt="weebly">
-				<img src="/saas-project-assets/company_logos/uber.svg" alt="uber">
-				<img src="/saas-project-assets/company_logos/slack.svg" alt="slack">
-				<img src="/saas-project-assets/company_logos/airbnb.svg" alt="airbnb">
-				<img src="/saas-project-assets/company_logos/slack.svg" alt="slack">
+				<img src="/saas-project-assets/company_logos/stock-logo-1.png" alt="stock logo">
+				<img src="/saas-project-assets/company_logos/stock-logo-2.png" alt="stock logo">
+				<img src="/saas-project-assets/company_logos/stock-logo-3.png" alt="stock logo">
+				<img src="/saas-project-assets/company_logos/stock-logo-4.png" alt="stock logo">
+				<img src="/saas-project-assets/company_logos/stock-logo-5.png" alt="stock logo">
 			</div>
 		</div>
 
@@ -550,6 +550,18 @@
 	</footer>
 
 	<script>
+
+		const nav = document.getElementById('navBar');
+			window.onscroll = function () {
+				if (window.pageYOffset > 400) {
+					nav.classList.add('sticky');
+				} else {
+					nav.classList.remove('sticky');
+				}
+			};
+
+
+
 		const navButton = document.querySelector('button[aria-expanded]');
 
 		function toggleNav({ target }) {
