@@ -22,7 +22,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin: var(--size-30);
+	/* margin: var(--size-30); */
 }
 
 [aria-controls="navbarDropdown"] {
